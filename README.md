@@ -81,7 +81,7 @@ your `jsdoc` task is expected to be configured to use one of the provided
 
 #### src
 
-Required: `src: {(String|Array.<String>)}`
+`{(String|Array.<String>)} src` (required)
 
 The directory (`String`), or list of directories (`Array.<String>`), that contain
 __generated__ JSDoc documentation based on an
@@ -91,20 +91,20 @@ __generated__ JSDoc documentation based on an
 
 #### fixProtocol
 
-Optional: `fixProtocol: true`
+`{Boolean} [fixProtocol=true]` (optional, default: `true`)
 
 Fix the relative protocols, changing them all to use the value of the
 `protocol` option.
 
 #### protocol
 
-Optional: `protocol: 'http'`
+`{String} [protocol='http']` (optional, default: `'http'`)
 
 Protocol to use when fixing relative protocols with `fixProtocol` enabled.
 
 #### fixTopNavbar
 
-Optional: `fixTopNavbar: false`
+`{Boolean} [fixTopNavbar=false]` (optional, default: `false`)
 
 Fix the top navbar issue by letting it scroll with content.
 
