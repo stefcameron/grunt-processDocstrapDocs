@@ -66,5 +66,4 @@ customizing your template...
 ## TODO
 
 *   publish to npm
-*   integrate with travis-ci.org
 *   add some real tests
