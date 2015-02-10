@@ -1,5 +1,5 @@
 {
-  "name": "grunt-processDocstrapDocs",
+  "name": "grunt-processdocstrapdocs",
   "version": "0.0.1",
   "description": "Post-process generated JSDoc documentation based on docstrap templates.",
   "main": "gruntfile.js",

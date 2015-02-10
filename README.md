@@ -1,6 +1,8 @@
-# grunt-processDocstrapDocs
+# grunt-processdocstrapdocs
 
 [![Build Status](https://travis-ci.org/stefcameron/grunt-processDocstrapDocs.svg?branch=master)](https://travis-ci.org/stefcameron/grunt-processDocstrapDocs) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+[![Npm Downloads](https://nodei.co/npm/grunt-processdocstrapdocs.png?downloads=true&stars=true)](https://nodei.co/npm/grunt-processdocstrapdocs.png?downloads=true&stars=true)
 
 Post-process generated JSDoc documentation based on docstrap templates.
 
@@ -67,5 +69,4 @@ customizing your template...
 
 ## TODO
 
-*   publish to npm
 *   add some real tests
