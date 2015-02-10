@@ -43,24 +43,68 @@ __ignored__ (i.e. modifiations will be made to each source directory specified).
 Big thanks to Terry Weiss (and contributors) for really nice JSDoc templates at
 https://github.com/terryweiss/docstrap!
 
-## Options
+## Installation
 
-### fixProtocol
+`npm install grunt-processdocstrapdocs --save-dev`
 
-`fixProtocol: true`
+## Configuration
+
+    //// gruntfile.js:
+
+    grunt.initConfig({
+      jsdoc: {
+        // your existing configuration
+      },
+      processdocstrapdocs: {
+        options: {
+          fixProtocol: true,
+          protocol: 'http',
+          fixTopNavbar: true
+        },
+        dist: {
+          src: 'docs'
+        }
+      }
+    });
+
+    grunt.registerTrask('docs', ['jsdoc', 'processdocstrapdocs']);
+
+    //// command line:
+
+    $ grunt docs
+
+Note that the `processdocstrapdocs` task must depend on the `jsdoc` task, that
+your `jsdoc` task is expected to be configured to use one of the provided
+[ink-docstrap templates](https://github.com/krampstudio/grunt-jsdoc#templates).
+
+### Settings
+
+#### src
+
+Required: `src: {(String|Array.<String>)}`
+
+The directory (`String`), or list of directories (`Array.<String>`), that contain
+__generated__ JSDoc documentation based on an
+[ink-docstrap template](https://github.com/krampstudio/grunt-jsdoc#templates).
+
+### Options
+
+#### fixProtocol
+
+Optional: `fixProtocol: true`
 
 Fix the relative protocols, changing them all to use the value of the
 `protocol` option.
 
-### protocol
+#### protocol
 
-`protocol: 'http'`
+Optional: `protocol: 'http'`
 
 Protocol to use when fixing relative protocols with `fixProtocol` enabled.
 
-### fixTopNavbar
+#### fixTopNavbar
 
-`fixTopNavbar: false`
+Optional: `fixTopNavbar: false`
 
 Fix the top navbar issue by letting it scroll with content.
 
