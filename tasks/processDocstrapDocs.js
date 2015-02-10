@@ -36,7 +36,7 @@ module.exports = function(grunt) {
    *
    * @see https://github.com/terryweiss/docstrap
    */
-  grunt.registerMultiTask('processDocstrapDocs',
+  grunt.registerMultiTask('processdocstrapdocs',
       'Post-process JSDoc-generated, ink-docstrap-themed, documentation',
       function() {
 
