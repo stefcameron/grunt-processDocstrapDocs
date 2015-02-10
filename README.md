@@ -1,4 +1,6 @@
-# grunt-processDocstrapDocs [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# grunt-processDocstrapDocs
+
+[![Build Status](https://travis-ci.org/stefcameron/grunt-processDocstrapDocs.svg?branch=master)](https://travis-ci.org/stefcameron/grunt-processDocstrapDocs) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Post-process generated JSDoc documentation based on docstrap templates.
 
