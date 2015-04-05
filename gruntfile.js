@@ -1,6 +1,10 @@
 module.exports = function(grunt) {
   'use strict';
 
+  // force line endings to LF on all operating systems (otherwise, defaults to
+  //  CRLF on Windows)
+  grunt.util.linefeed = '\n';
+
   // metadata/task configuration
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
