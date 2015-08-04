@@ -37,6 +37,10 @@ Some issues with the generated templates are:
     This issue is fixed by removing the `navbar-fixed-top` style from the top
     navbar.
 
+    __Note:__ Later releases of built-in JSDoc templates have addressed this issue
+    so setting this option is no longer necessary (at least as of JSDoc 3.3.2 or
+    even earlier).
+
 __Note:__ For this task, each source is also a destination. Destinations are
 __ignored__ (i.e. modifiations will be made to each source directory specified).
 
@@ -109,7 +113,8 @@ Protocol to use when fixing relative protocols with `fixProtocol` enabled.
 Fix the top navbar issue by letting it scroll with content.
 
 This option is `false` by default since this really should be handled by
-customizing your template...
+customizing your template and the latest version of JSDoc (3.3.2 at this time)
+has fixed the issue in their built-in templates.
 
 ## TODO
 

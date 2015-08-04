@@ -126,15 +126,10 @@ module.exports = function(grunt) {
 
             content = grunt.file.read(filePath);
 
-            /*jshint -W109 */
-            content = content.replace("url('//fonts",
-                "url('" + options.protocol + '://fonts');
-            /*jshint +W109 */
+            content = content.replace(/url\((['"])?\/\/fonts/g,
+                'url($1' + options.protocol + '://fonts');
 
-            content = content.replace('url(//fonts',
-                'url(' + options.protocol + '://fonts');
-
-            // site.flatly.css: the 'fred' protocol?!
+            // site.flatly.css: the 'fred' protocol?! (in some older JSDoc releases)
             content = content.replace('url("fred://',
                 'url("' + options.protocol + '://');
           }
